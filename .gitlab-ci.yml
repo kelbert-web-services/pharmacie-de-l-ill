@@ -8,10 +8,10 @@ build-site:
   image: alpine:3.19
   stage: build
   script:
-    - mkdir -p public
-    - cp -r sources/. public/
+    - mkdir -p pharmacie-de-l-ill
+    - cp -r sources/. pharmacie-de-l-ill/
   artifacts:
     name: "site-$CI_COMMIT_REF_SLUG"
     paths:
-      - public/
+      - pharmacie-de-l-ill/
     expire_in: 3 months
